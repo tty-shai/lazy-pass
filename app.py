@@ -53,3 +53,6 @@ def add(type: str = Form(), name: str = Form(), value: str = Form()):
                 (type, name, c.encrypt(value.encode())))
     con.commit(); con.close()
     return RedirectResponse("/", status_code=303)
+
+
+1231
